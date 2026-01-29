@@ -32,7 +32,7 @@ function runTimer(){
             document.querySelector("#timerVal").innerText = timer;
         }else{
             clearInterval(timerInt);
-            document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1>`;
+            document.querySelector("#pbtm").innerHTML = `<h1>Game Over! Your Score is : ${score}</h1>`;
         }
 
     },1000);
