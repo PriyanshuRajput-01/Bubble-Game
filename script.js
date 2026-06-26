@@ -1,6 +1,6 @@
-// let choseTime = prompt("Enter your second you want to play..");
+let choseTime = prompt("Enter your second you want to play..");
 
-let timer = 2;
+let timer = choseTime;
 let score = 0;
 let rnHit = 0;
 
