@@ -30,24 +30,24 @@ html,body{
     background-color: rgb(38, 75, 89);
     display: flex;
     align-items: center;
-    padding: 0px 22%;
-    justify-content: space-around;
+    padding: 0rem 1rem;
+    justify-content: space-evenly;
     
    
 }
 .elem{
     display: flex;
-    gap: 10px;
+    gap: 0.5rem;
     align-items: center;
 }
 .elem h2{
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
 }
 .box{
     color:rgb(46, 82, 91);
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     background-color: #fff;
     border-radius: 5px;
@@ -79,3 +79,27 @@ html,body{
     background-color: rgb(17, 53, 60);
     cursor: pointer;
 }
+/* 
+@media (min-width: 200px) and (max-width: 600px) {
+
+    #ptop{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: rgb(38, 75, 89);
+    display: flex;
+    align-items: center;
+    padding: 0px 22%;
+    justify-content: space-around;
+    
+   
+}
+    .box{
+    color:rgb(46, 82, 91);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 5px;
+}
+} */
