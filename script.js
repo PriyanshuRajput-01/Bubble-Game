@@ -1,6 +1,6 @@
-let choseTime = prompt("Enter your second you want to play..");
+// let choseTime = prompt("Enter your second you want to play..");
 
-let timer = choseTime;
+let timer = 100;
 let score = 0;
 let rnHit = 0;
 
@@ -14,15 +14,20 @@ function getRandHit(){
     document.querySelector("#hitVal").innerText = rnHit;
 }
 
+
 function makeBubble(){
-let clutter = "";
+    let clutter = "";
+    
+    // Yeh line check karegi ki screen laptop ki hai ya mobile ki
+    // Agar screen ki width 768px se zyada hai toh 150 bubbles, nahi toh mobile ke liye 40 bubbles
+    let totalBubbles = window.innerWidth > 768 ? 230 : 45;
 
-for(let i = 0; i<=229; i++){
-    let rand = Math.floor(Math.random() * 10);
-    clutter += `<div class="bubble">${rand}</div>`;
-}
+    for(let i = 0; i < totalBubbles; i++){
+        let rand = Math.floor(Math.random() * 10);
+        clutter += `<div class="bubble">${rand}</div>`;
+    }
 
-document.querySelector("#pbtm").innerHTML = clutter;
+    document.querySelector("#pbtm").innerHTML = clutter;
 }
 
 function runTimer(){
