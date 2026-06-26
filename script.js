@@ -1,6 +1,6 @@
-let choseTime = prompt("Enter your second you want to play..");
+// let choseTime = prompt("Enter your second you want to play..");
 
-let timer = choseTime;
+let timer = 2;
 let score = 0;
 let rnHit = 0;
 
@@ -17,7 +17,7 @@ function getRandHit(){
 function makeBubble(){
 let clutter = "";
 
-for(let i = 0; i<=206; i++){
+for(let i = 0; i<=229; i++){
     let rand = Math.floor(Math.random() * 10);
     clutter += `<div class="bubble">${rand}</div>`;
 }
@@ -32,7 +32,7 @@ function runTimer(){
             document.querySelector("#timerVal").innerText = timer;
         }else{
             clearInterval(timerInt);
-            document.querySelector("#pbtm").innerHTML = `<h1>Game Over! <br> Your Score is : ${score}</h1>`;
+            document.querySelector("#pbtm").innerHTML = `<h1><div style="color:red; text: center;display:flex;  justify-content: center;"/>Game Over!</div> <br> Your Score is : ${score}</h1>`;
         }
 
     },1000);
